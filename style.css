@@ -367,3 +367,28 @@ a.carousel-next {
   text-decoration: none;
   cursor: pointer;
 }
+
+/* Use a media query to add a breakpoint at 800px: */
+
+@media screen and (max-width: 500px) {
+  .tool-cards div {
+    margin-top: -10%;
+    width: 65%;
+    height: 200px;
+  }
+  #logo {
+    width: 95%;
+  }
+  .first-tool, .second-tool, .third-tool, .fourth-tool, .fifth-tool {
+    background-color: #fff;
+  }
+  .hammer img, .lathe img, .twisty img, .saw img, .chisel img, {
+    display: none;
+  }
+  .instagram, .email, .about, .gallery, .reviews {
+    visibility: visible;
+    position: relative;
+    top: -70px;
+    display: block;
+  }
+}
