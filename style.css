@@ -4,7 +4,7 @@ body {
   /* background-image: url("images/p5.png"); */
   background-image: url("images/gplaypattern.png");
   overflow-x: hidden;
-  /* overflow-y: hidden; */
+  overflow-y: hidden;
 }
 
 /* --------- modal section -----------*/
@@ -456,10 +456,20 @@ img.hover-shadow {
 /* Use a media query to add a breakpoint at 800px: */
 
 @media screen and (max-width: 500px) {
+  .jumbotron {
+    margin-top: -2%;
+    padding-left: 5%;
+    padding-top: 10%;
+  }
+  .tool-cards:last {
+    margin-bottom: 5%;
+  }
   .tool-cards div {
-    margin-top: -10%;
-    width: 65%;
-    height: 200px;
+    background-color: transparent;
+    margin-top: 0;
+    margin: 0;
+    width: 50%;
+    height: 175px;
     margin-bottom: 5px;
   }
   #logo {
@@ -480,7 +490,7 @@ img.hover-shadow {
   .instagram, .email, .about, .gallery, .reviews {
     visibility: visible;
     position: relative;
-    top: -70px;
+    top: -85px;
     display: block;
   }
 }
