@@ -461,7 +461,8 @@ img.hover-shadow {
   }
   .jumbotron {
     margin-top: -2%;
-    padding-left: 5%;
+    margin-bottom: 18%;
+    padding-left: 0%;
     padding-top: 10%;
   }
   .tool-cards div:last {
@@ -476,8 +477,8 @@ img.hover-shadow {
     margin-bottom: 5px;
   }
   #logo {
-    width: 400px;
-    margin-left: -10%;
+    width: 100%;
+    margin-left: 0%;
   }
   /*
   .first-tool img, .second-tool img, .third-tool img, .fourth-tool img, .fifth-tool img {
