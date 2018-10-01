@@ -456,12 +456,15 @@ img.hover-shadow {
 /* Use a media query to add a breakpoint at 800px: */
 
 @media screen and (max-width: 500px) {
+  body {
+    overflow-y: visible;
+  }
   .jumbotron {
     margin-top: -2%;
     padding-left: 5%;
     padding-top: 10%;
   }
-  .tool-cards:last {
+  .tool-cards div:last {
     margin-bottom: 5%;
   }
   .tool-cards div {
