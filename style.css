@@ -1,13 +1,19 @@
 body {
   /* background-image: url("images/concrete-texture.png"); */
   /* background-image: url("images/agsquare.png"); */
-  /* background-image: url("images/p5.png"); */
-  background-image: url("images/gplaypattern.png");
+  background-image: url("images/x.jpeg");
+  /* background-image: url("images/gplaypattern.png"); */
+  background-size: cover;
   overflow-x: hidden;
-  overflow-y: hidden;
+  /* overflow-y: hidden; */
 }
 
 /* --------- modal section -----------*/
+
+.email a {
+  text-decoration: none;
+  color: #ffffff;
+}
 
 .row>.column {
   padding: 0 8px;
@@ -173,7 +179,7 @@ img.hover-shadow {
 #logo {
   z-index: 5;
   /* margin-top: 2%; */
-  width: 50%;
+  width: 45%;
 }
 
 .tool-cards {
@@ -320,35 +326,16 @@ img.hover-shadow {
 
 /* --------- gallery section -----------*/
 
-.instagram {
+.instagram, .email, .gallery, .about, .reviews {
   /* display: none; */
   visibility: hidden;
-  color: #523212;
+  color: #ffffff;
+  font-size: 23px;
 }
 
-.email {
-  /* display: none; */
-  visibility: hidden;
-  color: #40230e;
-}
-
-.gallery {
-  /* display: none; */
-  visibility: hidden;
-  color: #341e0e;
-}
-
-.about {
-  /* display: none; */
-  visibility: hidden;
-  color: #27190d;
-}
-
-.reviews {
-  /* display: none; */
-  visibility: hidden;
-  color: #180c01;
-}
+/* .instagram:not(img), .email:not(img), .gallery, .about, .reviews {
+  border: 2px solid #ffffff;
+} */
 
 /* --------- contact section -----------*/
 
@@ -453,11 +440,71 @@ img.hover-shadow {
   float: right;
 }
 
+.reviews img {
+  height: 120px;
+}
+
+.gallery img {
+  height: 120px;
+}
+
+.email img {
+  height: 120px;
+}
+
 /* Use a media query to add a breakpoint at 800px: */
 
 @media screen and (max-width: 500px) {
   body {
     overflow-y: visible;
+  }
+  .tool-cards div {
+    border: 5px solid #ffffff;
+  }
+  .modal {
+    padding-left: 0px;
+  }
+  .about-modal-content {
+    width: 100%;
+    padding: 10%;
+    margin-top: 10%;
+  }
+  .review-modal-content {
+    width: 100%;
+    padding: 10%;
+    margin-top: 10%;
+  }
+  .gallery-modal-content {
+    text-align: center;
+    width: 100%;
+    padding: 0%;
+    margin-top: 10%;
+  }
+  .mySlides img {
+    margin-top: 12%;
+    width: 100% !important;
+    height: 100%;
+  }
+  .column {
+    display: none;
+  }
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 0px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  .prev {
+    left: 0px;
   }
   .jumbotron {
     margin-top: -2%;
@@ -477,6 +524,8 @@ img.hover-shadow {
     margin-bottom: 5px;
   }
   #logo {
+    margin-bottom: 20px;
+    margin-top: 10px;
     width: 100%;
     margin-left: 0%;
   }
@@ -494,7 +543,7 @@ img.hover-shadow {
   .instagram, .email, .about, .gallery, .reviews {
     visibility: visible;
     position: relative;
-    top: -85px;
+    top: -100px;
     display: block;
   }
 }

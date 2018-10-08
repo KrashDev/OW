@@ -28,7 +28,10 @@
       </div>
       <div class="second-tool">
         <p id="lathe"><img src="images/lathe2.svg"></p>
-        <p class="email" role="button"><img src="images/mail.svg"><br>email</p>
+        <p class="email" role="button">
+          <a href="mailto:arrie.j.oliver@gmail.com">
+          <img src="images/mail.svg"><br>email</p>
+        </a>
       </div>
       <div class="third-tool">
         <p id="twisty"><img src="images/twisty2.svg"></p>
@@ -36,7 +39,7 @@
       </div>
       <div class="fourth-tool">
         <p id="saw"><img src="images/saw2.svg"></p>
-        <p class="about" role="button"><img src="images/person.svg"><br>about</p>
+        <p class="about" role="button"><img src="images/bio.svg"><br>about</p>
       </div>
       <div class="fifth-tool">
         <p id="chisel"><img src="images/chisel2.svg"></p>
@@ -45,7 +48,7 @@
           <br> reviews
         </p>
       </div>
-    </p>
+      </p>
   </div>
 
   <!-- The about modal -->
@@ -53,8 +56,8 @@
     <span class="close">&times;</span>
     <div class="about-modal-content">
 
-      <p>"Oliver Woodworks is a small business run by me, Arrie Oliver: someone whose greatest passion in life is woodworking. I love being able to share that with others, and I take great care to design the perfect piece for each person that allows me to.
-        I make everything myself, custom to order, and try my best to locally source materials. Please feel free to contact me with any of your woodworking needs."</p>
+      <p>Oliver Woodworks is a small business run by me, Arrie Oliver: someone whose greatest passion in life is woodworking. I love being able to share that with others, and I take great care to design the perfect piece for each person that allows me to.
+        I make everything myself, custom to order, and try my best to locally source materials. Please feel free to contact me with any of your woodworking needs.</p>
       <p class="quoter">-Arrie Oliver</p>
     </div>
   </div>
@@ -62,48 +65,66 @@
   <!-- The gallery modal -->
   <div id="gallery-modal" class="modal">
     <span class="close" onclick="closeModal()">&times;</span>
-    <div class="gallery-modal-content">
+    <div class="gallery-modal-content" style="text-align: center;">
 
       <div class="mySlides">
-        <div class="numbertext">1 / 4</div>
-        <img src="images/1.jpg" style="width:90%">
+        <div class="numbertext">1 / 11</div>
+        <img src="images/table.jpg">
       </div>
 
       <div class="mySlides">
-        <div class="numbertext">2 / 4</div>
-        <img src="images/2.jpg" style="width:90%">
+        <div class="numbertext">2 / 11</div>
+        <img src="images/table2.jpg">
       </div>
 
       <div class="mySlides">
-        <div class="numbertext">3 / 4</div>
-        <img src="images/3.jpg" style="width:90%">
+        <div class="numbertext">3 / 11</div>
+        <img src="images/table3.jpg">
       </div>
 
       <div class="mySlides">
-        <div class="numbertext">4 / 4</div>
-        <img src="images/4.jpg" style="width:90%">
+        <div class="numbertext">4 / 11</div>
+        <img src="images/table5.jpg">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">5 / 11</div>
+        <img src="images/desk4.jpg">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">6 / 9</div>
+        <img src="images/desk.jpg">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">7 / 11</div>
+        <img src="images/desk2.jpg">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">8 / 11</div>
+        <img src="images/desk3.jpg">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">9 / 11</div>
+        <img src="images/brush2.jpg">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">10 / 11</div>
+        <img src="images/brush3.jpg">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">11 / 11</div>
+        <img src="images/brush.jpg">
       </div>
 
       <!-- Next/previous controls -->
       <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
       <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-      <!-- Thumbnail image controls -->
-      <div class="column">
-        <img class="demo" src="images/1.jpg" onclick="currentSlide(1)">
-      </div>
-
-      <div class="column">
-        <img class="demo" src="images/2.jpg" onclick="currentSlide(2)">
-      </div>
-
-      <div class="column">
-        <img class="demo" src="images/3.jpg" onclick="currentSlide(3)">
-      </div>
-
-      <div class="column">
-        <img class="demo" src="images/4.jpg" onclick="currentSlide(4)">
-      </div>
 
     </div>
   </div>
@@ -114,35 +135,55 @@
     <div class="review-modal-content">
 
       <div class="review-slide">
-        <div class="numbertext">1 / 3</div>
-        <p>"Arrie is very knowledgeable in all areas of home remodel. Thank you so much for all you help, and advise during our home remodel. Your wood working skills are awesome and very pretty to look at. My Husband and I are very glad to have found you.
-          Thank you for everything. I will recommend you to everyone out there!"</p>
-        <p class="quoter">-Kirsten Blackwater</p>
+        <div class="numbertext">1 / 4</div>
+        <p>
+          "Arrie's gorgeous work made my home office not only some place I actively want to work again, but a space in which I find myself spending spare time on the weekend!"
+        </p>
+        <p class="quoter">
+          - E.S.
+        </p>
 
       </div>
 
       <div class="review-slide">
-        <div class="numbertext">2 / 3</div>
-        <p>"Arrie is a very knowledgeable, talented, ethical carpenter. He has worked for me for over 30 years as well as several members of my family and friends. I am happy to recommend him and his work to anyone who wants a good FAIR price as well as
-          a skilled job."</p>
-        <p class="quoter">-Alvaro Stevens</p>
+        <div class="numbertext">2 / 4</div>
+        <p>
+          "You are amazing! We love our new table! We'll get a lifetime of family meals together out of it!"
+        </p>
+        <p class="quoter">
+          - N.P.
+        </p>
 
 
       </div>
       <div class="review-slide">
-        <div class="numbertext">3 / 3</div>
-        <p>"I have had the district pleasure to use Arrie for several projects both inside and outside my home over the last 2 years. Arrie is a true craftsman with an attention to detail you rarely find these days. He worked with us collaboratively and
-          gave options for how to approach the work. His prices are a good value. Arrie is easy to work with and persisted till the job was done right!"</p>
-        <p class="quoter">-Donny Gabai</p>
+        <div class="numbertext">3 / 4</div>
+        <p>
+          "The desk is exactly what we wanted and MORE! You were great at walking us through the whole process and very patient with two very picky people. Thank you!!"
+        </p>
+        <p class="quoter">
+          - R.J.
+        </p>
+      </div>
+
+
+      <div class="review-slide">
+        <div class="numbertext">4 / 4</div>
+        <p>
+          "Arrie is the best! He was great about coming into our space and talking with us about anything and everything related to the design of our table. He made sure that we felt totally confident and satisfied in our decisions and made us something we couldn't
+          have been happier with!"
+        </p>
+        <p class="quoter">
+          - J.J.
+        </p>
       </div>
 
       <!-- Next/previous controls -->
-      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-      <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-
+      <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a> -->
     </div>
-    <!-- modal content -->
+  </div>
+  <!-- modal content -->
   </div>
   <!-- review modal div -->
 
@@ -178,12 +219,38 @@
     for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";
     }
-    for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-    }
     slides[slideIndex - 1].style.display = "block";
-    dots[slideIndex - 1].className += " active";
   }
+
+  /////////////////////////////////////////////////////////
+
+  // var revSlideIndex = 1;
+  // showRevSlides(revSlideIndex);
+  //
+  // // Next/previous controls
+  // function plusRevSlides(n) {
+  //   showRevSlides(revSlideIndex += n);
+  // }
+  //
+  // // Thumbnail image controls
+  // function currentRevSlide(n) {
+  //   showRevSlides(revSlideIndex = n);
+  // }
+  //
+  // function showSlides(n) {
+  //   var i;
+  //   var RevSlides = $(".review-slide");
+  //   if (n > revSlides.length) {
+  //     revSlideIndex = 1
+  //   }
+  //   if (n < 1) {
+  //     RevSlideIndex = revSlides.length
+  //   }
+  //   for (i = 0; i < revSlides.length; i++) {
+  //     revSlides[i].revStyle.display = "none";
+  //   }
+  //   revSlides[revSlideIndex - 1].revStyle.display = "block";
+  // }
 </script>
 
 <script src="https://code.jquery.com/jquery-3.2.1.js "></script>

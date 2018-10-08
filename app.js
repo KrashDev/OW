@@ -64,27 +64,31 @@ $(document).ready(function() {
   //-------mouse enter display widgets-----
 
   $('.first-tool').mouseenter(function() {
-    $(this).css('background-color', 'transparent');
+    this.style.borderColor = "#ffffff";
     $('.instagram').css('visibility', 'visible');
     $('#hammer').css('visibility', 'hidden');
   });
 
   $('.second-tool').mouseenter(function() {
+    this.style.borderColor = "#ffffff";
     $('.email').css('visibility', 'visible');
     $('#lathe').css('visibility', 'hidden');
   });
 
   $('.third-tool').mouseenter(function() {
+    this.style.borderColor = "#ffffff";
     $('.gallery').css('visibility', 'visible');
     $('#twisty').css('visibility', 'hidden');
   });
 
   $('.fourth-tool').mouseenter(function() {
+    this.style.borderColor = "#ffffff";
     $('.about').css('visibility', 'visible');
     $('#saw').css('visibility', 'hidden');
   });
 
   $('.fifth-tool').mouseenter(function() {
+    this.style.borderColor = "#ffffff";
     $('.reviews').css('visibility', 'visible');
     $('#chisel').css('visibility', 'hidden');
   });
@@ -95,30 +99,35 @@ $(document).ready(function() {
 
 
   $('.first-tool').mouseleave(function() {
+    this.style.borderColor = '#523212';
     $(this).css('background-color', '#523212');
     $('.instagram').css('visibility', 'hidden');
     $('#hammer').css('visibility', 'visible');
   });
 
   $('.second-tool').mouseleave(function() {
+    this.style.borderColor = '#40230e';
     $(this).css('background-color', '#40230e');
     $('.email').css('visibility', 'hidden');
     $('#lathe').css('visibility', 'visible');
   });
 
   $('.third-tool').mouseleave(function() {
+    this.style.borderColor = '#341e0e';
     $(this).css('background-color', '#341e0e');
     $('.gallery').css('visibility', 'hidden');
     $('#twisty').css('visibility', 'visible');
   });
 
   $('.fourth-tool').mouseleave(function() {
+    this.style.borderColor = '#27190d';
     $(this).css('background-color', '#27190d');
     $('.about').css('visibility', 'hidden');
     $('#saw').css('visibility', 'visible');
   });
 
   $('.fifth-tool').mouseleave(function() {
+    this.style.borderColor = '#180c01';
     $(this).css('background-color', '#180c01');
     $('.reviews').css('visibility', 'hidden');
     $('#chisel').css('visibility', 'visible');
@@ -130,9 +139,9 @@ $(document).ready(function() {
     window.open('https://www.instagram.com/arrieoliver/?hl=en');
   });
 
-  $('.email img').click(function() {
-    window.open('https://www.google.com/');
-  });
+  // $('.email img').click(function() {
+  //   window.open(' mailto:arrie.j.oliver@gmail.com ');
+  // });
 
 
   //------close modal--------
@@ -183,9 +192,21 @@ $(document).ready(function() {
 
   //-----carousel buttons-----
 
+  $('.gallery img').click(function() {
+    $('.mySlides:eq(0)').css('display', 'block');
+  });
 
   $(closeButton).click(function() {
     $(modal).css('display', 'none');
+  });
+
+  $(closeButton).click(function() {
+    $('.tool-cards div').css({
+      "background-color": "transparent"
+    });
+    $('.gallery, .about, .reviews').css({
+      "visibility": "visible"
+    });
   });
 
   // When the user clicks anywhere outside of the modal, close it
