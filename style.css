@@ -1,6 +1,4 @@
 body {
-  /* background-image: url("images/concrete-texture.png"); */
-  /* background-image: url("images/agsquare.png"); */
   background-image: url("images/x.jpeg");
   /* background-image: url("images/gplaypattern.png"); */
   background-size: cover;
@@ -13,29 +11,6 @@ body {
 .email a {
   text-decoration: none;
   color: #ffffff;
-}
-
-.row>.column {
-  padding: 0 8px;
-}
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Create four equal columns that floats next to eachother */
-
-.column {
-  padding-top: 1%;
-  float: left;
-  width: 25%;
-}
-
-.column img {
-  width: 90%;
-  height: 200px;
 }
 
 /* The Modal (background) */
@@ -53,8 +28,6 @@ body {
   overflow: auto;
   background-color: black;
 }
-
-/* Modal Content */
 
 /* The Close Button */
 
@@ -129,52 +102,7 @@ body {
   top: 0;
 }
 
-/* Caption text */
-
-img.demo {
-  opacity: 0.6;
-}
-
-.active, .demo:hover {
-  opacity: 1;
-}
-
-img.hover-shadow {
-  transition: 0.3s;
-}
-
-.hover-shadow:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
 /* --------- tool section -----------*/
-
-.jumbotron {
-  /* border-bottom: 50px solid #555;
-  border-left: 25px solid transparent;
-  border-right: 25px solid transparent; */
-  /* -webkit-transform: skew(50deg); */
-  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
-}
-
-.jumbotron img {
-  /* -webkit-transform: skew(-50deg); */
-}
-
-/* .jumbotron {
-  margin-top: -5%;
-  padding-top: 4%;
-  padding-bottom: 10px;
-  background-color: #ffffff;
-  margin-left: 12%;
-  margin-right: 12%;
-  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
-}
-
-.jumbotron img {
-  z-index: 5;
-  width: 72%;
-} */
 
 #logo {
   z-index: 5;
@@ -193,55 +121,50 @@ img.hover-shadow {
 .first-tool {
   background-color: #523212;
   border: 5px solid #523212;
-  /* background-color: transparent; */
   text-align: center;
-}
-
-.first-tool img {
-  position: relative;
-  top: 105px;
-}
-
-#hammer {
-  text-align: center;
-}
-
-#hammer img {
-  position: relative;
-  top: 105px;
-}
-
-#lathe {
-  text-align: center;
-}
-
-#twisty {
-  text-align: center;
-}
-
-#chisel {
-  text-align: center;
-}
-
-#saw {
-  text-align: center;
-}
-
-.instagram img {
-  position: relative;
-  top: 0px;
 }
 
 .second-tool {
   background-color: #40230e;
   border: 5px solid #40230e;
-  /* background-color: transparent; */
   text-align: center;
 }
 
-.second-tool img {
+.third-tool {
+  background-color: #341e0e;
+  border: 5px solid #341e0e;
+  text-align: center;
+}
+
+.fourth-tool {
+  background-color: #27190d;
+  border: 5px solid #27190d;
+  text-align: center;
+}
+
+.fifth-tool {
+  background-color: #180c01;
+  border: 5px solid #180c01;
+  text-align: center;
+}
+
+.first-tool img, .second-tool img, .third-tool img, .fourth-tool img, .fifth-tool img {
   position: relative;
   top: 105px;
+}
+
+#hammer, #lathe, #twisty, #chisel, #saw {
+  text-align: center;
+}
+
+/*
+#hammer img {
+  position: relative;
+} */
+
+.instagram img {
+  position: relative;
+  top: 0px;
 }
 
 .email img {
@@ -249,50 +172,14 @@ img.hover-shadow {
   top: 0px;
 }
 
-.third-tool {
-  background-color: #341e0e;
-  border: 5px solid #341e0e;
-  /* background-color: transparent; */
-  text-align: center;
-}
-
-.third-tool img {
-  position: relative;
-  top: 105px;
-}
-
 .gallery img {
   position: relative;
   top: 0px;
 }
 
-.fourth-tool {
-  background-color: #27190d;
-  border: 5px solid #27190d;
-  /* background-color: transparent; */
-  text-align: center;
-}
-
-.fourth-tool img {
-  position: relative;
-  top: 105px;
-}
-
 .about img {
   position: relative;
   top: 0px;
-}
-
-.fifth-tool {
-  background-color: #180c01;
-  border: 5px solid #180c01;
-  /* background-color: transparent; */
-  text-align: center;
-}
-
-.fifth-tool img {
-  position: relative;
-  top: 105px;
 }
 
 .reviews img {
@@ -306,6 +193,7 @@ img.hover-shadow {
   margin-top: -2%;
   padding-bottom: 10px;
   background-color: #ffffff;
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
 }
 
 .tool-cards {
@@ -320,24 +208,15 @@ img.hover-shadow {
   display: inline-block;
   margin-top: 4%;
   box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
-  /* border: 2px solid #000000; */
-  /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
 }
 
 /* --------- gallery section -----------*/
 
 .instagram, .email, .gallery, .about, .reviews {
-  /* display: none; */
   visibility: hidden;
   color: #ffffff;
   font-size: 23px;
 }
-
-/* .instagram:not(img), .email:not(img), .gallery, .about, .reviews {
-  border: 2px solid #ffffff;
-} */
-
-/* --------- contact section -----------*/
 
 /* -------The Modal (background)-------*/
 
@@ -367,65 +246,6 @@ img.hover-shadow {
   margin: auto;
 }
 
-/* Modal Content */
-
-/* #review-modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  padding-top: 100px;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgb(0, 0, 0);
-  background-color: rgba(0, 0, 0, 0.4);
-} */
-
-/* .review-modal-content {
-  background-color: #fefefe;
-  margin: auto;
-  padding: 5% 10% 5% 10%;
-  border: 3px solid #333333;
-  width: 65%;
-  font-size: 20px;
-  font-family: 'Tienne', serif;
-} */
-
-/* #gallery-modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  padding-top: 100px;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgb(0, 0, 0);
-  background-color: rgba(0, 0, 0, 0.4);
-} */
-
-/* .gallery-modal-content {
-  text-align: center;
-  background-color: #fefefe;
-  margin: auto;
-  padding: 4%;
-  border: 3px solid #333333;
-  width: 70%;
-  font-size: 20px;
-  font-family: 'Tienne', serif;
-}
-
-.gallery-modal-content img {
-  padding: 10px;
-  margin: 2%;
-  height: 270px;
-  width: 350px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-} */
-
 .review-slide {
   display: none;
 }
@@ -440,19 +260,15 @@ img.hover-shadow {
   float: right;
 }
 
-.reviews img {
+.reviews img, .gallery img, .email img, .about img, .instagram img {
   height: 120px;
 }
 
-.gallery img {
-  height: 120px;
-}
+/* -------------------------------------------------------------------------------- */
 
-.email img {
-  height: 120px;
-}
+/* -------------------------- MEDIA QUERIES -------------------------- */
 
-/* Use a media query to add a breakpoint at 800px: */
+/* -------------------------------------------------------------------------------- */
 
 @media screen and (max-width: 500px) {
   body {
@@ -491,7 +307,7 @@ img.hover-shadow {
   .prev, .next {
     cursor: pointer;
     position: absolute;
-    top: 40%;
+    top: 62%;
     width: auto;
     padding: 0px;
     margin-top: -50px;

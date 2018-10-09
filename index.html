@@ -14,41 +14,45 @@
   <!-- <div class="container-fluid"> -->
   <div class="jumbotron jumbotron-fluid">
     <!-- <p style="text-align:left;"><img id="" src="images/back.svg"></p> -->
-    <p style="text-align:center;"><img id="logo" src="images/logo4.svg"></p>
+    <p style="text-align:center;"><img id="logo" src="images/dotlogo.svg"></p>
     <!-- <p style="text-align:right;"><img id="" src="images/brown.svg"></p> -->
 
   </div>
 
 
   <div class="tool-cards">
-    <p>
-      <div class="first-tool">
-        <p id="hammer"><img src="images/hammer2.svg"></p>
-        <p class="instagram" role="button"><img src="images/insta.svg"><br>instagram</p>
-      </div>
-      <div class="second-tool">
-        <p id="lathe"><img src="images/lathe2.svg"></p>
-        <p class="email" role="button">
-          <a href="mailto:arrie.j.oliver@gmail.com">
+    <!-- <p> -->
+    <div class="first-tool">
+      <p id="hammer"><img src="images/hammer2.svg"></p>
+      <p class="instagram" role="button"><img src="images/insta.svg"><br>instagram</p>
+    </div>
+
+    <div class="second-tool">
+      <p id="lathe"><img src="images/lathe2.svg"></p>
+      <p class="email" role="button">
+        <a href="mailto:arrie@oliverwoodworks.com">
           <img src="images/mail.svg"><br>email</p>
         </a>
-      </div>
-      <div class="third-tool">
-        <p id="twisty"><img src="images/twisty2.svg"></p>
-        <p class="gallery" role="button"><img src="images/gallery.svg" onclick="openModal();currentSlide(1)"><br>gallery</p>
-      </div>
-      <div class="fourth-tool">
-        <p id="saw"><img src="images/saw2.svg"></p>
-        <p class="about" role="button"><img src="images/bio.svg"><br>about</p>
-      </div>
-      <div class="fifth-tool">
-        <p id="chisel"><img src="images/chisel2.svg"></p>
-        <p class="reviews" role="button">
-          <img src="images/reviews.svg">
-          <br> reviews
-        </p>
-      </div>
+    </div>
+
+    <div class="third-tool">
+      <p id="twisty"><img src="images/twisty2.svg"></p>
+      <p class="gallery" role="button"><img src="images/gallery.svg" onclick="openModal();currentSlide(1)"><br>gallery</p>
+    </div>
+
+    <div class="fourth-tool">
+      <p id="saw"><img src="images/saw2.svg"></p>
+      <p class="about" role="button"><img src="images/bio.svg"><br>about</p>
+    </div>
+
+    <div class="fifth-tool">
+      <p id="chisel"><img src="images/chisel2.svg"></p>
+      <p class="reviews" role="button">
+        <img src="images/reviews.svg">
+        <br> reviews
       </p>
+    </div>
+    <!-- </p> -->
   </div>
 
   <!-- The about modal -->
@@ -179,20 +183,48 @@
       </div>
 
       <!-- Next/previous controls -->
-      <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-      <a class="next" onclick="plusSlides(1)">&#10095;</a> -->
+      <a class="prev" onclick="plusReviewSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusReviewSlides(1)">&#10095;</a>
     </div>
   </div>
   <!-- modal content -->
-  </div>
-  <!-- review modal div -->
 
-  <!-- </div> -->
+  </div>
   <!-- container div -->
 
 </body>
 
 <script>
+  var reviewSlideIndex = 1;
+  showReviewSlides(reviewSlideIndex);
+
+  // Next/previous controls
+  function plusReviewSlides(m) {
+    showReviewSlides(reviewSlideIndex += m);
+  }
+
+  // Thumbnail image controls
+  function currentReviewSlide(m) {
+    showReviewSlides(reviewSlideIndex = m);
+  }
+
+  function showReviewSlides(m) {
+    var i;
+    var reviewSlides = $(".review-slide");
+    if (m > reviewSlides.length) {
+      reviewSlideIndex = 1
+    }
+    if (m < 1) {
+      reviewSlideIndex = reviewSlides.length
+    }
+    for (i = 0; i < reviewSlides.length; i++) {
+      reviewSlides[i].style.display = "none";
+    }
+    reviewSlides[reviewSlideIndex - 1].style.display = "block";
+  }
+
+  /////////////////////////////////////////////////////////
+
   var slideIndex = 1;
   showSlides(slideIndex);
 
@@ -209,7 +241,6 @@
   function showSlides(n) {
     var i;
     var slides = $(".mySlides");
-    var dots = $(".demo");
     if (n > slides.length) {
       slideIndex = 1
     }
@@ -221,36 +252,6 @@
     }
     slides[slideIndex - 1].style.display = "block";
   }
-
-  /////////////////////////////////////////////////////////
-
-  // var revSlideIndex = 1;
-  // showRevSlides(revSlideIndex);
-  //
-  // // Next/previous controls
-  // function plusRevSlides(n) {
-  //   showRevSlides(revSlideIndex += n);
-  // }
-  //
-  // // Thumbnail image controls
-  // function currentRevSlide(n) {
-  //   showRevSlides(revSlideIndex = n);
-  // }
-  //
-  // function showSlides(n) {
-  //   var i;
-  //   var RevSlides = $(".review-slide");
-  //   if (n > revSlides.length) {
-  //     revSlideIndex = 1
-  //   }
-  //   if (n < 1) {
-  //     RevSlideIndex = revSlides.length
-  //   }
-  //   for (i = 0; i < revSlides.length; i++) {
-  //     revSlides[i].revStyle.display = "none";
-  //   }
-  //   revSlides[revSlideIndex - 1].revStyle.display = "block";
-  // }
 </script>
 
 <script src="https://code.jquery.com/jquery-3.2.1.js "></script>
